@@ -1,0 +1,76 @@
+/*
+Paletas de Colores de la pagina.
+
+Colores principales: H2 y BOTONES
+* #0055af
+
+Colores secundarios: HEADER, FOOTER, BORDES
+* #121212
+
+Color de Fondo BODY
+* #f8f9fa
+
+Color del texto PRINCIPAL
+* #212529
+
+Color del texto CLARO
+* #fff
+
+*/
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+header{
+    background-color: #121212;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.icono{
+    width: 70px;
+    height: 70px;
+}
+
+nav a{
+    color: #212529;
+}
+nav a:hover{
+    color: #0055af;
+}
+
+main{
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.juegos{
+    width: 100%;
+    height: 400px;
+}
+
+#contacto{
+    width: 500px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea{
+    font-size: 16px;
+    width: 100%;
+}
