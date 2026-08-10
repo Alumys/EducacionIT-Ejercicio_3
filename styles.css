@@ -18,11 +18,13 @@ Color del texto CLARO
 
 */
 
+/* ESTILIZADO GENERAL */
 * {
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
 
+/* CUERPO DE PAGINA */
 body{
     margin: 0;
     padding: 0;
@@ -30,6 +32,7 @@ body{
     color: #212529;
 }
 
+/* CABECERA */
 header{
     background-color: #121212;
     color: #fff;
@@ -37,39 +40,135 @@ header{
     text-align: center;
 }
 
+/*
+NUEVO ################################
+*/
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    list-style: none;
+}
+
+#inicio{
+    background-color: #070F2B;
+    color: #fff;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+/* ESTILIZADO DEL MENU */
+#menu article{
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 15px;
+}
+#menu article h3{
+    background-color: #535C91;
+    color: #fff;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+/*Linea separadora*/
+.separador{ 
+    border: 1px solid black;
+    margin-bottom: 15px;
+}
+/* SECCIONES DE PAGINA*/
+#juegos, #contacto, #menu, #inicio, #servicios{
+    margin-top: 20px;
+}
+
+
+.boton_compra{
+    display: flex;
+    justify-content: right;
+}
+.boton_compra p{
+    margin-left: 10px;
+    color: #9290C3;
+    font-weight: bolder;
+    font-size: 20px;
+}
+.boton_compra button{
+    margin-left: 15px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #fff;
+    background-color: #1B1A55;
+    padding-inline: 25px;
+    border-radius: 15px;
+}
+.boton_compra button:hover{
+    color: #9290C3;
+    background-color: #070F2B;
+
+}
+form{
+    background-color: #535C91;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+#servicios ul{
+    padding: 0px;
+}
+#servicios ul li{
+    list-style: none;
+    font: 10px;
+    font-weight: bolder;
+    border-radius: 15px;
+    padding: 10px;
+    color: #fff;
+    background-color: #0055af;
+    margin-bottom: 10px;
+}
+/*
+NUEVO FIN ################################
+*/
+
+/* ICONO REPRESENTATIVO*/
 .icono{
     width: 70px;
     height: 70px;
 }
 
+/* Botones de navegacion */
 nav a{
     color: #212529;
 }
 nav a:hover{
     color: #0055af;
 }
-
+/* Parte principal de la pagina */
 main{
-    width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
+    margin-inline: 240px;
 }
 
+/* Imagenes de los Juegos */
 .juegos{
     width: 100%;
     height: 400px;
 }
 
-#contacto{
-    width: 500px;
-    max-width: 100%;
-    margin: 0 auto;
+/* Seccion contacto */
+#contacto form{
+    margin-right: 50%;
 }
+
+/* representantes del formulario */
 label{
+    color: #fff;
+    font-weight: bolder;
+    margin-bottom: 5px;
     display: block;
     margin-bottom: 5px;
 }
 
+/* Partes escribibles del formulario */
 input, textarea{
     font-size: 16px;
     width: 100%;
