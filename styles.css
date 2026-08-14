@@ -40,15 +40,64 @@ header{
     text-align: center;
 }
 
-/*
-NUEVO ################################
-*/
+.icono{
+    width: 100px;
+    height: 100px;
+}
 
+/*Navegacion*/
 nav ul{
     display: flex;
     justify-content: center;
     gap: 25px;
     list-style: none;
+}
+
+/* Botones de navegacion */
+nav a{
+    color: #fff;
+    font-weight: bolder;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #EF6905;
+    padding: 5px;
+    border-radius: 15px;
+    background-color: #8B2626;
+}
+
+/* ####Parte principal de la pagina#### */
+main{
+    margin-inline: 280px;
+}
+
+/* Seccion contacto */
+#contacto form{
+    margin-right: 50%;
+}
+
+/* representantes del formulario */
+label{
+    color: #fff;
+    font-weight: bolder;
+    margin-bottom: 5px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Partes escribibles del formulario */
+input, textarea{
+    font-size: 16px;
+    width: 100%;
+    resize: none;
+}
+
+/* ###SECCIONES### */
+
+#juegos, #contacto, #menu, #inicio, #servicios{
+    margin-top: 20px;
 }
 
 #inicio{
@@ -58,7 +107,6 @@ nav ul{
     border-radius: 15px;
 }
 
-/* ESTILIZADO DEL MENU */
 #menu article{
     border: 1px solid black;
     border-radius: 15px;
@@ -72,17 +120,19 @@ nav ul{
     padding: 15px;
 }
 
+/* Imagenes de los Juegos */
+.juegos{
+    width: 100%;
+    height: 400px;
+}
+
 /*Linea separadora*/
 .separador{ 
     border: 1px solid black;
     margin-bottom: 15px;
 }
-/* SECCIONES DE PAGINA*/
-#juegos, #contacto, #menu, #inicio, #servicios{
-    margin-top: 20px;
-}
 
-
+/*Botones de la pagina (Compra)*/
 .boton_compra{
     display: flex;
     justify-content: right;
@@ -107,11 +157,6 @@ nav ul{
     background-color: #070F2B;
 
 }
-form{
-    background-color: #535C91;
-    padding: 25px;
-    border-radius: 15px;
-}
 
 #servicios ul{
     padding: 0px;
@@ -126,50 +171,35 @@ form{
     background-color: #0055af;
     margin-bottom: 10px;
 }
-/*
-NUEVO FIN ################################
-*/
 
-/* ICONO REPRESENTATIVO*/
-.icono{
-    width: 70px;
-    height: 70px;
-}
+/*Formularios y contacto*/
 
-/* Botones de navegacion */
-nav a{
-    color: #212529;
-}
-nav a:hover{
-    color: #0055af;
-}
-/* Parte principal de la pagina */
-main{
-    margin-inline: 240px;
-}
-
-/* Imagenes de los Juegos */
-.juegos{
-    width: 100%;
-    height: 400px;
-}
-
-/* Seccion contacto */
-#contacto form{
-    margin-right: 50%;
-}
-
-/* representantes del formulario */
-label{
-    color: #fff;
+#contacto form button{
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 10px;
     font-weight: bolder;
-    margin-bottom: 5px;
-    display: block;
-    margin-bottom: 5px;
+    border-radius: 15px;
+    color: #fff;
+    background-color: #1B1A55;
+    font-size: 15px;
 }
 
-/* Partes escribibles del formulario */
-input, textarea{
-    font-size: 16px;
-    width: 100%;
+form{
+    background-color: #535C91;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+#contacto form button:hover{
+    background-color: #070F2B
+;
+}
+
+/*Pie de pagina*/
+footer{
+    color: #fff;
+    background-color: #121212;
+    padding: 25px;
+    text-align: center;
 }
